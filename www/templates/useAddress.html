@@ -1,0 +1,40 @@
+<ion-view>
+    <ion-content>
+
+       <h2> Fact Details </h2>
+       
+      <div class="list">
+
+  <label class="item item-input item-select">
+    <div class="input-label">
+      Type of fact
+    </div>
+        <select ng-model="fact.type">
+          <option checked="true"> Movie </option>
+          <option>History</option>
+          <option>Music</option>
+          <option>Person</option>
+          <option>Other</option>
+        </select>
+  </label>
+  <label class="item item-input item-select">
+    <div class="input-label">
+      Name
+    </div>
+            <input ng-model="fact.name"></input>
+  </label>
+  
+  <label class="item item-input item-select">
+    <div class="input-label">
+      More Details
+    </div>
+         <textarea ng-model="fact.details" style="height: 200px; border: 1px solid">
+         </textarea>
+  </label>
+  
+  
+         <button class="button button-block button-positive"
+          ng-click="createFact()"> Create Fact! </button>
+        
+    </ion-content>
+</ion-view>

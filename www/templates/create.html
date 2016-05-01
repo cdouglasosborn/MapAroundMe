@@ -1,0 +1,23 @@
+<ion-view>
+    <ion-content style="padding: 20px">
+
+
+<h2> Where is this fact based? </h2>
+
+<p> You can either input an address (click to start inputting): </p>
+
+<input type="text"
+    placeholder="Enter your address here"
+    ng-model="address" googleplace=""
+    class="ng-pristine ng-valid"
+    autocomplete="off"" style="width: 100%">
+
+<button class="button" ng-click="useAddress()"> Use </button>
+
+<h4> Or </h4>
+
+<button class="button" ng-click="mapSelect()"> Select On Map </button>
+
+    </ion-content>
+</ion-view>
+
